@@ -1,0 +1,25 @@
+server:
+  port: 3377
+
+spring:
+  application:
+    name: cloud-one-nacos-config1
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos服务注册中心地址
+      config:
+        server-addr: localhost:8848 #Nacos作为配置中心地址
+        file-extension: yaml #和nacos配置列表相对应
+        #group:
+        #cluster-name:
+        #namespace:
+        #name: #可以直接指定dataId
+
+config:
+  info1: local-bootstrap #配置文件的优先级是先bootstrap然后是application然后是application-dev(配置中心的也算)，先走完本地的配置，再去配置中心取其它的配置
+                          #如果有相同的配置，后来的会覆盖之前的
+
+

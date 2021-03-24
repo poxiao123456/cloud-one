@@ -1,0 +1,75 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-one-user
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+#cloud-client
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+#    lease-expiration-duration-in-seconds: #默认90s，超时将剔除服务
+#    lease-renewal-interval-in-seconds: #发送心跳的时间，默认30s
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+
+#actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+info:
+  app.name: cloud-one
+  company.name: www.poxiao.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
+
+#hystrix配置，经测试，配置有效
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #为false则超时控制有ribbon控制，为true则hystrix超时和ribbon超时都是用，但是谁小谁生效，默认为true
+          enable: true
+        isolation:
+          #使用线程池隔离
+          thread:
+            #hystrix的超时时长默认1秒，最常修改的参数
+            timeoutInMilliseconds: 3000
+  threadpool:
+    default:
+      coreSize: 10 #默认是10
+      maxQueueSize: 100 #默认是-1，为-1的时候使用synchronizedQueue
+      queueSizeRejectionThreshold: 90 #默认值是5个，这个阈值会影响maxQueueSize
+circuitBreaker:
+  #是否开启断路器
+  enabled: true
+  # 触发熔断的最小请求次数，默认为20
+  #默认触发熔断是10秒内20次异常
+  requestVolumeThreshold: 20
+  # 时间窗口期，默认为5秒
+  sleepWindowInMilliseconds: 5000
+  # 失败率达到多少后跳闸，默认50%
+  #默认触发熔断是10秒内失败率大于50%
+  errorThresholdPercentage: 50
+

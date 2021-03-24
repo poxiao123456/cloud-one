@@ -1,0 +1,156 @@
+2021-01-19 17:08:21.300 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e4b17b1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:21.973 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - No active profile set, falling back to default profiles: default
+2021-01-19 17:08:22.574 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8617cf16-4cf9-394b-b5ec-191fb6894193
+2021-01-19 17:08:22.710 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence' of type [org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:22.771 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator' of type [org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:22.790 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:22.826 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration$$EnhancerBySpringCGLIB$$ec3ee5fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:22.831 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e4b17b1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:08:23.003 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8401 (http)
+2021-01-19 17:08:23.012 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8401"]
+2021-01-19 17:08:23.017 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 17:08:23.018 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-01-19 17:08:23.162 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 17:08:23.162 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1182 ms
+2021-01-19 17:08:23.172 [main] INFO  c.a.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register Sentinel CommonFilter with urlPatterns: [/*].
+2021-01-19 17:08:23.967 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 17:08:23.970 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 17:08:24.076 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 17:08:24.144 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-01-19 17:08:24.824 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+2021-01-19 17:08:25.000 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8401"]
+2021-01-19 17:08:25.014 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8401 (http) with context path ''
+2021-01-19 17:08:25.070 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, cloud-one-sentinel-client 192.168.157.1:8401 register finished
+2021-01-19 17:08:25.072 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - Started CloudOneSentinelClientApplication in 4.882 seconds (JVM running for 5.657)
+2021-01-19 17:08:25.481 [RMI TCP Connection(1)-192.168.157.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 17:08:25.482 [RMI TCP Connection(1)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 17:08:25.487 [RMI TCP Connection(1)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2021-01-19 17:08:32.630 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:28:31.605 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:28:40.549 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:28:40.748 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:28:40.933 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:28:41.201 [http-nio-8401-exec-9] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-9	...testA
+2021-01-19 17:28:41.397 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:28:41.580 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:28:41.766 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:28:42.165 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:28:42.362 [http-nio-8401-exec-9] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-9	...testA
+2021-01-19 17:28:42.556 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:28:42.752 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:28:42.945 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:28:43.111 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:29:29.036 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35e6def2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:29.759 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - No active profile set, falling back to default profiles: default
+2021-01-19 17:29:30.778 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8617cf16-4cf9-394b-b5ec-191fb6894193
+2021-01-19 17:29:31.025 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence' of type [org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:31.328 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator' of type [org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:31.355 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:31.421 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration$$EnhancerBySpringCGLIB$$3d7449d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:31.430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$35e6def2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 17:29:31.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8401 (http)
+2021-01-19 17:29:31.875 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8401"]
+2021-01-19 17:29:31.882 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 17:29:31.882 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-01-19 17:29:32.098 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 17:29:32.099 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2326 ms
+2021-01-19 17:29:32.111 [main] INFO  c.a.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register Sentinel CommonFilter with urlPatterns: [/*].
+2021-01-19 17:29:33.196 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 17:29:33.202 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 17:29:33.449 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 17:29:33.585 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-01-19 17:29:34.375 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+2021-01-19 17:29:34.758 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8401"]
+2021-01-19 17:29:34.784 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8401 (http) with context path ''
+2021-01-19 17:29:35.085 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, cloud-one-sentinel-client 192.168.157.1:8401 register finished
+2021-01-19 17:29:35.088 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - Started CloudOneSentinelClientApplication in 7.997 seconds (JVM running for 12.684)
+2021-01-19 17:29:35.872 [RMI TCP Connection(2)-192.168.157.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 17:29:35.872 [RMI TCP Connection(2)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 17:29:35.883 [RMI TCP Connection(2)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-01-19 17:29:41.300 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:29:47.695 [http-nio-8401-exec-5] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-5	...testA
+2021-01-19 17:29:47.892 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:29:48.085 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:29:48.301 [http-nio-8401-exec-9] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-9	...testA
+2021-01-19 17:29:48.541 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:29:48.746 [http-nio-8401-exec-5] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-5	...testA
+2021-01-19 17:29:48.946 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:29:49.144 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:29:49.340 [http-nio-8401-exec-9] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-9	...testA
+2021-01-19 17:29:49.523 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:29:49.727 [http-nio-8401-exec-5] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-5	...testA
+2021-01-19 17:29:49.924 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:29:50.131 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:29:50.325 [http-nio-8401-exec-9] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-9	...testA
+2021-01-19 17:29:50.524 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 17:29:50.728 [http-nio-8401-exec-5] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-5	...testA
+2021-01-19 17:29:50.925 [http-nio-8401-exec-2] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-2	...testA
+2021-01-19 17:29:51.125 [http-nio-8401-exec-7] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-7	...testA
+2021-01-19 17:30:57.743 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:30:58.146 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:30:58.543 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:30:58.895 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:30:59.213 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:30:59.472 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:30:59.699 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:30:59.907 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:00.115 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:00.334 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:00.528 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:00.742 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:01.152 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:01.322 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:01.513 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:01.707 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:01.911 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:02.122 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:02.325 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:02.539 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:02.748 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:02.945 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:03.152 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:03.368 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:03.586 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:03.788 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:03.999 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:04.208 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:04.404 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:04.602 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:04.800 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:05.208 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:05.806 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:05.990 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 17:31:06.167 [http-nio-8401-exec-8] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-8	...testA
+2021-01-19 17:31:13.740 [http-nio-8401-exec-10] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-10	...testA
+2021-01-19 17:31:13.915 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testA
+2021-01-19 17:31:14.092 [http-nio-8401-exec-3] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-3	...testA
+2021-01-19 17:31:14.248 [http-nio-8401-exec-6] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-6	...testA
+2021-01-19 19:25:58.689 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$203f3fef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:25:59.489 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - No active profile set, falling back to default profiles: default
+2021-01-19 19:26:00.164 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8617cf16-4cf9-394b-b5ec-191fb6894193
+2021-01-19 19:26:00.308 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence' of type [org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:26:00.394 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator' of type [org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:26:00.421 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:26:00.476 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration$$EnhancerBySpringCGLIB$$27ccaacf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:26:00.484 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$203f3fef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:26:00.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8401 (http)
+2021-01-19 19:26:00.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8401"]
+2021-01-19 19:26:00.753 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 19:26:00.753 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-01-19 19:26:00.924 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 19:26:00.925 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1426 ms
+2021-01-19 19:26:00.934 [main] INFO  c.a.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register Sentinel CommonFilter with urlPatterns: [/*].
+2021-01-19 19:26:01.824 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 19:26:01.828 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-19 19:26:01.957 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 19:26:02.070 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-01-19 19:26:02.928 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 21 endpoint(s) beneath base path '/actuator'
+2021-01-19 19:26:03.161 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8401"]
+2021-01-19 19:26:03.177 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8401 (http) with context path ''
+2021-01-19 19:26:03.279 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, cloud-one-sentinel-client 192.168.157.1:8401 register finished
+2021-01-19 19:26:03.282 [main] INFO  com.poxiao.cloud.CloudOneSentinelClientApplication - Started CloudOneSentinelClientApplication in 6.09 seconds (JVM running for 6.995)
+2021-01-19 19:26:04.076 [RMI TCP Connection(3)-192.168.157.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 19:26:04.077 [RMI TCP Connection(3)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 19:26:04.082 [RMI TCP Connection(3)-192.168.157.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2021-01-19 19:26:45.419 [http-nio-8401-exec-1] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-1	...testA
+2021-01-19 19:27:13.178 [http-nio-8401-exec-4] INFO  com.poxiao.cloud.controller.FlowLimitController - http-nio-8401-exec-4	...testB

@@ -1,0 +1,63 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-one-gateway
+  profiles:
+    active: dev
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: cloud-one-config
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      fail-fast: true #是否启动快速失败功能，功能开启则优先判断config server是否正常
+      label: master
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用微服务名进行路由
+      routes:
+      #user-provider
+        - id: cloud-one-user #路由的ID，没有固定规则但要求唯一，简易配合服务名
+          uri: lb://cloud-one-user #lb表示启用Gateway的负载均衡功能.lb://serverName是spring cloud gatway在微服务中自动为我们创建的负载均衡uri
+          predicates:
+            - Path=/user-service/**
+            filters:
+              - StripPrefix=1
+              #降级配置，在路由后对请求修改
+              - name: Hystrix
+                args:
+                  name: fallbackcmd
+                  fallbackUri: 'forward:/fallback'
+              #限流配置，在路由前对请求修改。官方不推荐在生产环境使用这个filter
+              - name: RequestRateLimiter
+                args:
+                  key-resolver: '#{@remoteAddrKeyResolver}'
+                  #允许用户每秒处理多少请求
+                  redis-rate-limiter.replenishRate: 10
+                  #令牌桶：允许用户在一秒内的最大请求
+                  redis-rate-limiter.burstCapacity: 20
+        - id: baidu_route
+          uri: http://www.baidu.com
+          predicates:
+            - Path=/baidu
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

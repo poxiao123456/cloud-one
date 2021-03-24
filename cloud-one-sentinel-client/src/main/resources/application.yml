@@ -1,0 +1,45 @@
+server:
+  port: 8401
+
+spring:
+  application:
+    name: cloud-one-sentinel-client
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #配置Sentinel dashboard地址
+        port: 8719 #默认的sentinelAPI的端口，如果被占用，可以自动递增
+      # 规则持久化
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: cloud-one-sentinel-client
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: INFO
+    com.poxiao.cloud.mapper: DEBUG
+
+#对Feign的支持
+feign:
+  sentinel:
+    enabled: true

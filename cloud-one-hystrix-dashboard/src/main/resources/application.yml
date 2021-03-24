@@ -1,0 +1,24 @@
+server:
+  port: 9050
+
+spring:
+  application:
+    name: cloud-one-hystrix-dashboard
+  main:
+    allow-bean-definition-overriding: true
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app.name: cloud-zero
+  company.name: www.poxiao.com
+  build.artifactId: @project.artifactId@
+  build.version: @project.version@
+
+
+
+

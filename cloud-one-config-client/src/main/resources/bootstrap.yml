@@ -1,0 +1,54 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-one-config-client
+  main:
+    allow-bean-definition-overriding: true
+
+  #配置中心-客户端
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: dev #读取后缀名称
+      fail-fast: true
+      #      discovery:
+      #        enabled: true
+      #        service-id: cloud-one-config
+      uri: http://localhost:8888 #配置中心的地址
+      label: master
+
+    #消息总线
+    bus:
+      enabled: true
+    #开启消息跟踪
+      trace:
+        enabled: true
+
+  #rabbitmq
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+#cloud
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+config:
+  version: config-version-bootstrap
+

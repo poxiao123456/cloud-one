@@ -1,0 +1,22 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-one-consul
+  cloud:
+    consul:
+      # consul注册中心地址
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        hostname: 127.0.0.1
+        service-name: ${spring.application.name}
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
